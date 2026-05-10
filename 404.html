@@ -5,10 +5,17 @@
   <title>Redirecting to joddiy.cc</title>
   <link rel="canonical" href="https://joddiy.cc/">
   <meta name="robots" content="noindex">
+  <script>
+    // 把当前 path / query / hash 拼到 joddiy.cc 上，保留访问的具体页面
+    var target = "https://joddiy.cc" + location.pathname + location.search + location.hash;
+    location.replace(target);
+  </script>
   <meta http-equiv="refresh" content="0; url=https://joddiy.cc/">
-  <script>location.replace("https://joddiy.cc/");</script>
 </head>
 <body>
   <p>This site has moved. Redirecting to <a href="https://joddiy.cc/">joddiy.cc</a>...</p>
+  <noscript>
+    <p>JavaScript required for path-preserving redirect. Please visit <a href="https://joddiy.cc/">joddiy.cc</a>.</p>
+  </noscript>
 </body>
 </html>
